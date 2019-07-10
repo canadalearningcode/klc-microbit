@@ -6,7 +6,7 @@ Preview Instructor Notes: https://ladieslearningcode.github.io/klc-microbit/note
 
 Preview 3-Hour Slides (ages 9-12): https://ladieslearningcode.github.io/klc-microbit/slides-en.html
 
-Preview 2-Hour Slides (ages 6-8): https://ladieslearningcode.github.io/klc-microbit/slides-en.html
+Preview 2-Hour Slides (ages 6-8): https://ladieslearningcode.github.io/klc-microbit/slides-en-2hours.html
 
 # ATTRIBUTIONS:
 
