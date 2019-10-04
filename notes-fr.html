@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Jeunesse en programmation</title>
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- S’occupe des préfixes CSS3 -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+
+  <!-- Ouvre tous les liens dans une nouvelle fenêtre -->
+  <base target="_blank">
+</head>
+
+<!-- Durée / barre de progression : définissez la durée de la présentation avec « data-duration » en minutes. -->
+<body class="en" data-duration="360">
+
+
+  <main>
+  <section class="slide" data-toc data-markdown>
+    <script type="text/template">
+      # Jeunesse en programmation : Intro au matériel informatique avec micro:bit
+
+      ##Notes de la formatrice
+
+      * <a href="#slide2" target="_self">Notes pour un atelier de 3 heures (9 à 12 ans)</a>
+      * <a href="#slide3" target="_self">Notes pour un atelier de 2 heures (6 à 8 ans)</a>
+
+    </script>
+  </section>
+
+  <section class="slide" data-toc data-markdown>
+    <script type="text/template">
+      ##Notes de la formatrice (atelier pour les 9 à 12 ans)
+
+      ##Jeunesse en programmation : Intro au matériel informatique avec micro:bit
+
+      <br>
+      #Concepts de programmation clés
+      <ul>
+        <li> Les <strong>variables</strong> sont des objets informatiques qui stockent une valeur. Les valeurs peuvent être modifiées et incrémentées. </li>
+        <li> Les <strong>expressions conditionnelles</strong> vérifient si une condition a été remplie pour décider si une action sera faite ou non. Si la condition est remplie (en d'autres mots, si elle est vraie ou « true »), une action est réalisée.</li>
+        <li> Les <strong>boucles</strong> servent à répéter une action jusqu’à ce qu'une condition précise soit remplie.</li>
+        <li> Les <strong>commentaires</strong> sont des lignes de code ignorées par l’ordinateur. Les humains peuvent lire les commentaires, mais les ordinateurs ne les comprennent pas. </li>
+      </ul>
+
+      #Syntaxe du JavaScript
+      <br>
+      Variables :
+      <pre><code>
+      //Ceci est un commentaire. L’ordinateur ne le lit pas!
+      let nombre = 1;
+      nombre += 1; //Ajoute et enregistre 1 dans la variable « nombre ». La variable « nombre » égale 2.
+
+      </code></pre>
+
+      Expressions conditionnelles (if)
+      <pre><code>
+      if(une_condition == true){
+        faire_une_action;
+      } else if(une_condition == false){
+        faire_une_autre_action;
+      }
+      </code></pre>
+      <br>
+
+      Boucles :
+      <br><pre><code>
+      while(une_condition == true){
+        faire_une_action;
+      }
+      </code></pre>
+      <br>
+
+      #Ouvrir les corrigés dans micro:bit
+
+      Nous avons créé des corrigés et des exemples de projets pour toutes les activités de programmation en groupe. Nous vous invitons à les consulter avant l'atelier. Pour ouvrir les corrigés, suivez ces étapes :
+
+      * Téléchargez l'exemple de projet de votre choix sur GitHub.
+      * Allez sur le site de <a href="http://makecode.microbit.org/#"> l’éditeur MakeCode </a> et cliquez sur « Importer ».
+      * Cliquez sur « Importer un fichier » et choisissez l'exemple de projet.
+
+      #Utilisation de micro:bit
+
+      micro:bit est un outil très efficace pour aider les élèves à faire la transition de la programmation par blocs à l’écriture de code. La carte micro:bit comprend des DELs, des boutons et des capteurs. Vous ne connaissez pas micro:bit? Ce n'est pas un problème : il y a beaucoup de ressources disponibles en ligne!
+      <ul>
+        <li> <a href="https://microbit.org/guide/features/"> Fonctionnalités de micro:bit</a> </li>
+        <li> <a href="https://makecode.microbit.org/reference">Référence micro:bit</a> </li>
+        <li> <a href="https://microbit.org/en/2017-03-07-javascript-block-resources/"> Quelques projets simples pour découvrir micro:bit </a></li>
+      </ul>
+
+      <br>
+      #Horaire
+
+      ![Icône intro](framework/img/workshop/intro-icon2.png) Présentation (30 min)
+
+      ![Icône code](framework/img/workshop/code-icon2.png) Programmation en groupe : blocs (30 minutes)
+
+      ![Icône intro](framework/img/workshop/intro-icon2.png) Introduction au JavaScript (10 minutes)
+
+      ![Icône code](framework/img/workshop/code-icon2.png) Programmation en groupe : JavaScript (60 minutes)
+
+      ![Icône ordinateur portable](framework/img/workshop/laptop-icon2.png) Séance de travail (45 minutes)
+
+      <br>
+      #Matériel + exigences particulières
+
+      * Cette activité exige une carte micro:bit.
+      * Cette activité exige un câble micro USB.
+      * Cette activité exige une connexion Wi-Fi.
+      * Cette activité exige des boules de papier.
+      * Cette activité exige du papier de construction, des marqueurs, du ruban adhésif et des rubans décoratifs ou des cure-pipes.
+
+      #Plan d’urgence
+      * <a href="https://makecode.microbit.org/offline-app"> Utilisez l’éditeur Make Code hors ligne.</a>
+
+      #Introduction
+
+      **Présentation (diapositive 3) :**
+      Avant de commencer, demandez aux élèves de mettre leur ordinateur en mode « politesse » (à moitié fermé).
+
+      Demandez aux mentores de se lever et de se présenter.
+
+      Ensuite, demandez aux élèves de se présenter à leur table et de répondre à une question brise-glace, p. ex., « Si vous pouviez aller n’importe où dans le monde, où iriez-vous? ».
+
+      Si le temps vous le permet, faites une activité brise-glace, comme celle du <a href="https://www.thegamegal.com/2011/06/11/going-on-a-picnic/"> pique-nique</a> .
+
+      **Le code des programmeuses et des programmeurs (Diapositive 5) :**
+
+      1. Demande de l'aide. Si tu as de la difficulté, travaille avec la personne à côté de toi ou lève la main pour demander à la formatrice ou à une des mentores de t’aider.
+      1. Prête attention au cours. Nous voulons que tu apprennes beaucoup de choses pendant l'atelier. C’est pourquoi tu dois respecter les consignes et suivre pendant les activités.
+      1. Fais de ton mieux. Même les meilleures programmeuses et les meilleurs programmeurs ont parfois de la difficulté. Nous ne nous attendons pas à ce que tout soit parfait. Tu n'as qu’à faire de ton mieux. Tu ne dois pas avoir peur d'essayer des choses et de faire des erreurs!
+
+      **Le projet du jour (diapositive 8) :**
+
+      Question : Que veut dire le mot « portable »? (R : Facile à transporter ou à déplacer.)
+      <br>
+      Question : Qu'est-ce qu’une application? (R : Un programme informatique qui fonctionne sur un ordinateur. Par exemple, les jeux mobiles, Microsoft Word et Fortnite sont des applications.
+
+      **Connais-tu ce jeu? (diapositive 10) :**
+      C’est le jeu Flappy Bird. Mentionnez qu'après cet atelier, tous les élèves du groupe auront les connaissances nécessaires pour créer ce jeu eux-mêmes!
+
+      **Qu'est-ce que le matériel informatique? (diapositive 11) :**
+      Accordez aux élèves quelques minutes pour répondre à la question et discuter du sujet avec les autres personnes à leur table. Si les élèves sont perdus, donnez-leur un exemple concret de matériel informatique pour les mettre sur la piste.
+
+      **Exemples de matériel informatique (diapositive 13) :**
+      Par exemple, sur un ordinateur, la carte mère, la mémoire vive, le processeur central, le moniteur, la souris et le clavier font partie du matériel.
+
+      **Qu'est-ce qu’un logiciel? (diapositive 14) :**
+      Accordez aux élèves quelques minutes pour répondre à la question et discuter du sujet avec les autres personnes à leur table.
+
+      **Un logiciel, c'est... (diapositive 15) :**
+      <br> Question : Connais-tu Scratch, le Python et le <strong style="color:#00a076;"> JavaScript</strong>? Que sont-ils? (R : Ce sont des langages de programmation.)
+
+      **Matériel + logiciel = technologie (diapositive 17) :**
+      Expliquez au groupe que la technologie fonctionne avec deux éléments : le matériel et le logiciel. Un objet physique (le matériel) lit les consignes que nous écrivons (le logiciel). La relation entre le matériel et le logiciel ressemble beaucoup à celle que nous avons avec les voitures. La voiture fait tout le travail physique : elle nous aide à nous déplacer d’un endroit à l’autre. Par contre, si nous voulons qu’elle sache quoi faire et où aller, nous devons lui donner des consignes précises. La voiture est le matériel et nous sommes le logiciel.
+
+      **Qu'est-ce qu’un lancer franc? (diapositive 18) :**
+      <br>
+      Question : Dans quel sport faisons-nous des lancers francs?  (« freethrow ») (R : Le basketball.)
+      <br>
+      Question : Qu'est-ce qu’un lancer franc? (R : Le lancer franc est un tir qui n'est pas protégé. Un joueur peut faire un lancer franc après avoir été victime d’une faute. S’il réussit à lancer le ballon dans le panier, il marque un point. Le joueur fait un lancer franc à partir de la ligne, qui se trouve à 4,5 mètres du panier.
+
+      **Basketbots (diapositive 22) :**
+      <a href="https://www.canadalearningcode.ca/lessons/basketbots/"> Ressource supplémentaire sur l'activité Basketbots.</a> Si vous n'avez pas de ballons de basketball et de panier à votre disposition, il vous suffit d’utiliser des boules de papier et une corbeille pour réaliser l'activité en classe.
+      <br> Demandez à un élève de venir à l'avant et de jouer à Basketbots avec vous pour montrer le déroulement de l'activité au reste du groupe.
+
+      **Créer un algorithme (diapositive 24) :**
+      D'abord, félicitez les élèves : ils ont créé leur premier algorithme. Expliquez au groupe qu’un algorithme est une série de consignes qu’un ordinateur doit suivre pour réaliser une tâche. Dites-leur que, comme dans Basketbots, les ordinateurs doivent suivre des consignes précises pour réaliser une tâche.
+
+      **micro:bit, c'est... (diapositive 26) :**
+      Si les élèves ne connaissent pas le JavaScript, dites-leur que nous aborderons le sujet plus tard pendant le cours.
+
+      **À la découverte de micro:bit (diapositive 27) :**
+      Les élèves devraient retirer le micro:bit de la boîte et mettre les piles.
+
+      **Un capteur, c'est... (diapositive 32) :**
+      Les capteurs sont un type de matériel. Lorsque nous ajoutons plusieurs capteurs à un ordinateur, il a une meilleure perception du monde qui l'entoure. Les ordinateurs sont comme les humains. En tant qu’humains, nous avons plusieurs sens que nous utilisons en même temps pour comprendre notre environnement. Par exemple, nous utilisons une combinaison de la vue et du toucher pour savoir s’il neige à l'extérieur.
+
+      * Le capteur de luminosité détermine si l'espace autour de la carte micro:bit est lumineux.
+      * Le capteur (la sonde) de température mesure la température autour de la carte micro:bit en degrés Celsius.
+      * Le capteur de mouvement ou l'accéléromètre détermine si la carte bouge.
+      * Le compas détermine l’orientation de la carte.
+
+      #Programmation en groupe : animation
+      * <a href="https://docs.google.com/document/d/1UtDnqac4eJkUMHi31272RovhshPihh0_lgW7GdIGYKI/edit?usp=sharing">Le corrigé est disponible ici.</a>
+      * L’exemple de projet (Exemple-Animation.hex) est disponible dans le dossier Corrigés micro:bit.
+
+      #Intro au JavaScript
+
+      **Qu'est-ce que le JavaScript? (diapositive 38) :**
+      Expliquez au groupe que le JavaScript est un langage très utilisé pour créer des sites Web interactifs.
+
+      **Domaines où il est utile de savoir programmer (diapositive 42) :**
+      Les machines qui peuvent se commander elles-mêmes sans être contrôlées directement par les humains sont des « machines autonomes ».
+
+      **Programmons en JavaScript (diapositive 43) :**
+
+      * Ouvrez le projet d'animation que vous avez commencé plus tôt dans MakeCode.
+      * En haut, cliquez sur JavaScript plutôt que sur Blocs.
+      * Question : Quelles différences vois-tu entre le JavaScript et les blocs?
+      * Question : Quelles lignes créent le bonhomme sourire?
+      * Question : Quelle ligne vérifie si le bouton est pressé?
+      * Question : Comment sais-tu si un bloc de code se trouve à l’intérieur d’un autre bloc? (R : {} et l’indentation.) Il s'agit d’un bon moment pour expliquer la syntaxe du JavaScript, comme les parenthèses et l’indentation. Mentionnez que nous utilisons souvent les points-virgules pour séparer différentes lignes en JavaScript.
+      * Montrez aux élèves l'emplacement du point-virgule et des parenthèses sur le clavier de leur ordinateur.
+      * Montrez aux élèves qu'en tapant « basic. » ou « input. », un menu d'actions s'affiche, comme quand nous cherchons des éléments avec les blocs.
+      * Dites aux élèves de créer une animation différente quand le bouton A est pressé en **JavaScript**. Le code devrait être identique, sauf pour les « # » et les « . » que nous plaçons à des endroits différents.
+
+      **Agir, s'engager pour une cause (diapositives 44 et 45)**
+      Jouez la vidéo sur le <a href="https://microbit.org/global-challenge/winners/">défi mondial micro:bit.</a> Encouragez les élèves à discuter avec leur groupe de problèmes réels qu’ils pourraient régler avec une carte micro:bit. Par exemple, ils pourraient s’engager pour des causes comme le réchauffement climatique, les l'approvisionnement en eau dans le monde, le gaspillage alimentaire, etc.
+
+      **Combien de pas fais-tu par jour en marchant? (diapositive 47) :**
+      Demandez aux élèves s’ils savent combien de pas ils font par jour. Dites-leur que, malheureusement, la population du Canada n'est pas très active. Demandez aux élèves s’ils croient qu’un nombre minimum de pas à faire au quotidien pourrait les aider à mener une vie plus active. Ensuite, demandez-leur des exemples de solution pour régler ce problème avec un micro:bit. S’ils n’ont pas suggéré un compteur de pas, présentez-leur l’idée.
+
+      **Créons un compteur de pas avec micro:bit! (diapositive 48) :**
+      Demandez aux élèves s’ils connaissent les montres intelligentes, comme les Fit Bit. (R : Les montres intelligentes encouragent les gens à faire attention à leur santé et à mener une vie active. Elles ont des fonctionnalités comme un compteur de pas!)
+
+      **L'accélération, c'est... (diapositive 51) :**
+      L’accélération est un terme qui définit le <strong> changement </strong> de la vitesse. En d'autres mots, l’accélération est ce qui nous fait pencher vers l'avant lorsqu’une voiture freine et ce qui nous pousse dans notre siège quand une voiture accélère. L'accélération est aussi la raison pour laquelle nous glissons dans notre siège quand une voiture tourne.
+
+      * Question : As-tu des exemples d’accélération? (R : Une balle qui tombe, une personne qui saute ou marche, etc.)
+      * Question : As-tu une idée de ce que mesure l'accéléromètre du micro:bit? (R : Il mesure l’accélération.)
+      * Question : Comment l’accélération peut-elle nous aider à créer un compteur de pas? (R : Notre pied accélère chaque fois que nous faisons un pas! Alors, quand l'accélération atteint un certain niveau, l'accélération est comptée comme un pas.)
+
+      <br>
+      #Programmation en groupe : JavaScript
+      * Continuez à travailler sur le projet précédent ou allez sur le site de l’<a href="https://makecode.microbit.org/#">éditeur MakeCode </a> et créez un nouveau projet.
+      * <a href="https://docs.google.com/document/d/1zWIYyoMXOeXEYTTbNSrk7eqi6_yYjGycvgUTR0ECVAw/edit?usp=sharing">Le corrigé est disponible ici.</a>
+      * L’exemple de projet (Code-Pas.hex) est disponible dans le dossier Corrigés micro:bit.
+      * <a href="https://docs.google.com/document/d/1lwlYEY1GQhwKqI3bmMLcAQZfSN74WC52-BZCfoJFIQo/edit">Vous trouverez une ressource supplémentaire pour le compteur de pas ici.</a>
+      <br>
+      <br>
+      #Séance de travail (diapositive 55)
+      * Attachez votre montre micro:bit à votre jambe. Créez un bracelet de montre pour attacher la carte micro:bit. N’oubliez pas les piles!
+      * Avant d’aller à l'extérieur, il est important que nous sachions s’il fait chaud ou froid. Solution : un écran qui affiche la température!
+      * Parfois, nous nous perdons quand nous nous promenons sur un sentier. Solution : un compas qui s'active quand nous appuyons sur B. Impossible de nous perdre! Si les élèves ne savent pas comment s'y prendre, programmez les premières expressions conditionnelles avec eux pour les orienter. De plus, pensez à dessiner un cercle avec des angles.
+      * Les exemples de projet (Code-Température.hex et Code-Compas.hex) sont disponibles dans le dossier Corrigés micro:bit.
+      * Si les élèves ont vraiment de la difficulté avec le JavaScript, permettez-leur de retourner aux blocs.
+
+      <br>
+      #Démonstrations (diapositive 56)
+      * Chaque groupe de deux devrait avoir l’occasion de venir à l'avant pour présenter son projet.
+      * Les élèves doivent apporter leurs cartes micro:bit et montrer au reste du groupe toutes les modifications et les fonctions ajoutées.
+      * De plus, les élèves peuvent mentionner les compétences qu’ils ont acquises durant l'atelier et dire leur aspect préféré du cours.
+      * Avant de demander aux groupes de venir à l'avant, donnez-leur deux ou trois minutes pour préparer leur présentation.
+      * Rappelez-leur de parler clairement à l'avant de la classe.
+
+     </script>
+  </section>
+
+  <section class="slide" data-toc data-markdown>
+    <script type="text/template">
+      ##Notes de la formatrice (atelier pour les 6 à 8 ans)
+
+      ##Jeunesse en programmation : Intro au matériel informatique avec micro:bit
+
+      <br>
+      #Concepts de programmation clés
+      <ul>
+        <li> Les <strong>variables</strong> sont des objets informatiques qui stockent une valeur. Les valeurs peuvent être modifiées et incrémentées. </li>
+        <li> Les <strong>expressions conditionnelles</strong> vérifient si une condition a été remplie pour décider si une action sera faite ou non. Si la condition est remplie (en d'autres mots, si elle est vraie ou « true »), une action est réalisée.</li>
+        <li> Les <strong>boucles</strong> servent à répéter une action jusqu’à ce qu'une condition précise soit remplie.</li>
+        <li> Les <strong>commentaires</strong> sont des lignes de code ignorées par l’ordinateur. Les humains peuvent lire les commentaires, mais les ordinateurs ne les comprennent pas. </li>
+      </ul>
+
+      #Ouvrir des exemples de projet dans micro:bit
+
+      Nous avons créé des corrigés et des exemples de projets pour toutes les activités de programmation en groupe. Nous vous invitons à les consulter avant l'atelier. Pour ouvrir les corrigés, suivez ces étapes :
+
+      * Téléchargez l'exemple de projet de votre choix sur GitHub.
+      * Allez sur le site de <a href="http://makecode.microbit.org/#"> l’éditeur MakeCode</a> et cliquez sur « Importer ».
+      * Cliquez sur « Importer un fichier » et choisissez l'exemple de projet.
+      * Assurez-vous que l’option « Blocs » est activée en haut de l’éditeur.
+
+      #Utilisation de micro:bit
+
+      micro:bit est un outil très efficace pour aider les élèves à faire la transition de la programmation par blocs à l’écriture de code. La carte micro:bit comprend des DELs, des boutons et des capteurs. Vous ne connaissez pas micro:bit? Ce n'est pas un problème : il y a beaucoup de ressources disponibles en ligne!
+      <ul>
+        <li> <a href="https://microbit.org/guide/features/"> Fonctionnalités de micro:bit</a> </li>
+        <li> <a href="https://makecode.microbit.org/reference">Référence micro:bit</a> </li>
+        <li> <a href="https://microbit.org/en/2017-03-07-javascript-block-resources/"> Quelques projets simples pour découvrir micro:bit </a></li>
+      </ul>
+
+      <br>
+      #Horaire
+
+      ![Icône intro](framework/img/workshop/intro-icon2.png) Présentation (30 minutes)
+
+      ![Icône code](framework/img/workshop/code-icon2.png) Programmation en groupe (60 minutes)
+
+      ![Icône ordinateur portable](framework/img/workshop/laptop-icon2.png) Séance de travail (30 minutes)
+
+      <br>
+      #Matériel + exigences particulières
+
+      * Cette activité exige une carte micro:bit.
+      * Cette activité exige un câble micro USB.
+      * Cette activité exige une connexion Wi-Fi.
+      * Cette activité exige du papier de construction, des marqueurs, du ruban adhésif et des rubans décoratifs ou des cure-pipes.
+
+      #Plan d’urgence
+      * <a href="https://makecode.microbit.org/offline-app">Utilisez l’éditeur Make Code hors ligne.</a>
+
+      #Introduction
+
+      **Présentation (diapositive 3) :**
+      Avant de commencer, demandez aux élèves de mettre leur ordinateur en mode « politesse » (à moitié fermé).
+
+      Demandez aux mentores de se lever et de se présenter.
+
+      Ensuite, demandez aux élèves de se présenter à leur table et de répondre à une question brise-glace, p. ex., « Si vous pouviez aller n’importe où dans le monde, où iriez-vous? ».
+
+      Si le temps vous le permet, faites une activité brise-glace, comme celle du <a href="https://www.thegamegal.com/2011/06/11/going-on-a-picnic/"> pique-nique</a>.
+
+      **Le code des programmeuses et des programmeurs (Diapositive 5) :**
+
+      1. Demande de l'aide. Si tu as de la difficulté, travaille avec la personne à côté de toi ou lève la main pour demander à la formatrice ou à une des mentores de t’aider.
+      1. Prête attention au cours. Nous voulons que tu apprennes beaucoup de choses pendant l'atelier. C’est pourquoi tu dois respecter les consignes et suivre pendant les activités.
+      1. Fais de ton mieux. Même les meilleures programmeuses et les meilleurs programmeurs ont parfois de la difficulté. Nous ne nous attendons pas à ce que tout soit parfait. Tu n'as qu’à faire de ton mieux. N'ayez pas peur d'essayer des choses et de faire des erreurs!
+
+      **Selon toi, dans quels domaines d’emploi utilise-t-on la programmation? (diapositive 8) :**
+      Question : Selon toi, dans quels domaines d’emploi utilise-t-on la programmation? Pour quels emplois est-il nécessaire d’écrire du code? Enchaînez en leur demandant pourquoi une créatrice ou un créateur de mode aurait besoin de programmer.
+
+      **Domaines où il est utile de savoir programmer (diapositive 9) :**
+      Les machines qui peuvent se commander elles-mêmes sans être contrôlées directement par les humains sont des « machines autonomes ».
+
+      **Le projet du jour (diapositive 10) :**
+
+      Question : Que veut dire le mot « portable »? (R : Facile à transporter ou à déplacer.)
+      <br>
+      Question : Qu'est-ce qu’une application? (R : Un programme informatique qui fonctionne sur un ordinateur. Par exemple, les jeux mobiles, Microsoft Word et Fortnite sont des applications.
+
+      **Connais-tu ce jeu? (diapositive 12) :**
+      C’est le jeu Flappy Bird. Mentionnez qu'après cet atelier, tous les élèves du groupe auront les connaissances nécessaires pour créer ce jeu eux-mêmes!
+
+      **Qu'est-ce que le matériel informatique? (diapositive 13) :**
+      Accordez aux élèves quelques minutes pour répondre à la question et discuter du sujet avec les autres personnes à leur table. Si les élèves sont perdus, donnez-leur un exemple concret de matériel informatique pour les mettre sur la piste.
+
+      **Exemples de matériel informatique (diapositive 15) :**
+      Par exemple, sur un ordinateur, la carte mère, la mémoire vive, le processeur central, le moniteur, la souris et le clavier font partie du matériel.
+
+      **Qu'est-ce qu’un logiciel? (diapositive 16) :**
+      Accordez aux élèves quelques minutes pour répondre à la question et discuter du sujet avec les autres personnes à leur table.
+
+      **Un logiciel, c'est... (diapositive 17) :**
+      <br> Question : Connais-tu Scratch, le Python et le JavaScript? Que sont-ils? (R : Ce sont des langages de programmation.)
+
+      **Matériel + logiciel = technologie (diapositive 19) :**
+      Expliquez au groupe que la technologie fonctionne avec deux éléments : le matériel et le logiciel. Un objet physique (le matériel) lit les consignes que nous écrivons (le logiciel). La relation entre le matériel et le logiciel ressemble beaucoup à celle que nous avons avec les voitures. La voiture fait tout le travail physique : elle nous aide à nous déplacer d’un endroit à l’autre. Par contre, si nous voulons qu’elle sache quoi faire et où aller, nous devons lui donner des consignes précises. La voiture est le matériel et nous sommes le logiciel.
+
+      **À la découverte de micro:bit (diapositive 22) :**
+      Les élèves devraient retirer le micro:bit de la boîte et mettre les piles. Demandez aux mentores d'aider les élèves.
+
+      **Un capteur, c'est... (diapositive 27) :**
+      Les capteurs sont un type de matériel. Lorsque nous ajoutons plusieurs capteurs à un ordinateur, il a une meilleure perception du monde qui l'entoure. Les ordinateurs sont comme les humains. En tant qu’humains, nous avons plusieurs sens que nous utilisons en même temps pour comprendre notre environnement. Par exemple, nous utilisons une combinaison de la vue et du toucher pour savoir s’il neige à l'extérieur.
+
+      * Le capteur de luminosité détermine si l'espace autour de la carte micro:bit est lumineux.
+      * Le capteur (la sonde) de température mesure la température autour de la carte micro:bit en degrés Celsius.
+      * Le capteur de mouvement ou l'accéléromètre détermine si la carte bouge.
+      * Le compas détermine l’orientation de la carte.
+
+      #Programmation en groupe : animation
+      * <a href="https://docs.google.com/document/d/1UtDnqac4eJkUMHi31272RovhshPihh0_lgW7GdIGYKI/edit?usp=sharing">Le corrigé est disponible ici.</a>
+      * L’exemple de projet (Exemple-Animation.hex) est disponible dans le dossier Corrigés micro:bit.
+
+      **Combien de pas fais-tu par jour? (diapositive 34) :**
+      Demandez aux élèves s’ils savent combien de pas ils font par jour. Dites-leur que, malheureusement, la population du Canada n'est pas très active. Demandez aux élèves s’ils croient qu’un nombre minimum de pas à faire au quotidien pourrait les aider à mener une vie plus active. Ensuite, demandez-leur des exemples de solution pour régler ce problème avec un micro:bit. S’ils n’ont pas suggéré un compteur de pas, présentez-leur l’idée.
+
+      **Avant de commencer, parlons d'accélération. (diapositive 36) :**
+      L’accélération est un terme qui définit le <strong> changement </strong> de la vitesse. En d'autres mots, l’accélération est ce qui nous fait pencher vers l'avant lorsqu’une voiture freine et ce qui nous pousse dans notre siège quand une voiture accélère. L'accélération est aussi la raison pour laquelle nous glissons dans notre siège quand une voiture tourne.
+
+      * Question : As-tu des exemples d’accélération? (R : Une balle qui tombe, une personne qui saute ou marche, etc.)
+      * Question : As-tu une idée de ce que mesure l'accéléromètre du micro:bit? (R : Il mesure l’accélération.)
+      * Question : Comment l’accélération peut-elle nous aider à créer un compteur de pas? (R : Notre pied accélère chaque fois que nous faisons un pas! Alors, quand l'accélération atteint un certain niveau, l'accélération est comptée comme un pas.)
+
+      **Créons une montre micro:bit (diapositive 40) :**
+      Demandez aux élèves s’ils connaissent les montres intelligentes, comme les Fit Bit. (R : Les montres intelligentes encouragent les gens à faire attention à leur santé et à mener une vie active. Elles ont des fonctionnalités comme un compteur de pas!)
+      <br>
+      <br>
+      #Programmation en groupe : montre micro:bit
+      * Continuez à travailler sur le projet précédent ou allez sur le site de l’<a href="https://makecode.microbit.org/#">éditeur MakeCode</a> et créez un nouveau projet.
+      * <a href="https://docs.google.com/document/d/17_y6ZEJc45cBi3jDlhTXEyIYfIBcYXo-EmhPfGV7pWU/edit?usp=sharing">Le corrigé est disponible ici.</a>
+      * L’exemple de projet (Code-Pas.hex) est disponible dans le dossier Corrigés micro:bit.
+      * <a href="https://docs.google.com/document/d/1lwlYEY1GQhwKqI3bmMLcAQZfSN74WC52-BZCfoJFIQo/edit">Vous trouverez une ressource supplémentaire pour le compteur de pas ici.</a>
+
+      <br>
+      #Séance de travail (diapositive 41)
+      * Les élèves devraient travailler sur leur bracelet de montre.
+      * Rappelez-leur que le bracelet doit être assez gros pour y mettre la boîte de piles.
+      * Insistez sur le fait que les élèves ne doivent PAS utiliser de colle durant cette activité.
+
+      <br>
+      #Démonstrations (diapositive 42)
+      * Chaque groupe de deux devrait avoir l’occasion de venir à l'avant pour présenter son projet.
+      * Les élèves doivent apporter leurs cartes micro:bit et montrer au reste du groupe toutes les modifications et les fonctions ajoutées.
+      * De plus, les élèves peuvent mentionner les compétences qu’ils ont acquises durant l'atelier et dire leur aspect préféré du cours.
+      * Avant de demander aux groupes de venir à l'avant, donnez-leur deux ou trois minutes pour préparer leur présentation.
+      * Rappelez-leur de parler clairement devant la classe.
+
+     </script>
+  </section>
+
+  </main><!-- Section principale cls -->
+
+  <script src="framework/scripts/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Enlevez les commentaires des modules dont vous avez besoin -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/llc.js"></script>
+  <script>
+    var slideshow = new SlideShow();
+
+    // Regroupe tous les éléments .snippet
+    var snippets = document.querySelectorAll('.snippet');
+    for(var i=0; i<snippets.length; i++) {
+      new CSSSnippet(snippets[i]);
+    }
+  </script>
+</body>
+</html>

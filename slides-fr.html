@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Jeunesse en programmation</title>
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- S’occupe des préfixes CSS3 -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+
+  <!-- Ouvre tous les liens dans une nouvelle fenêtre -->
+  <base target="_blank">
+</head>
+
+<!-- Durée / barre de progression : définissez la durée de la présentation avec « data-duration » en minutes. -->
+<body class="en" data-duration="360">
+
+  <!--Diapositive 1-->
+  <main>
+    <section class="slide welcome highlight">
+      <h1><img class="logo-stacked" src="framework/img/klc-logo-stacked-white.png" alt="Logo de Jeunesse en programmation">Bienvenue!</h1>
+
+      <div class="instructions">
+        <!-- AJOUTER LES INFOS SUR LE WI-FI ICI -->
+        <h2>Connecte- <br>toi</h2>
+        <p><strong>Wi-Fi :</strong> réseau Wi-Fi</p>
+        <p><strong>Mot de passe :</strong> mot de passe du Wi-Fi</p>
+      </div>
+
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licence Creative Commons" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Contenu créé par Bilal Qadar et Jen Perry pour <a prefix="cc: http://creativecommons.org/ns#" href="http://canadalearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Canada en programmation.</a></p>
+        <p class="right">Utilisez les flèches gauche <span class="arrow">&#8592;</span> et droite <span class="arrow">&#8594;</span> pour naviguer.</p>
+      </footer>
+    </section>
+
+  <!--Diapositive 2-->
+    <section class="slide intro">
+      <img class="logo" src="framework/img/klc-logo-white.png" alt="Logo de Jeunesse en programmation">
+      <h1 class="heading-bg">
+        <span>Intro au matériel informatique<br>
+        avec micro:bit</span>
+      </h1>
+
+      <!-- <img class="instructor" src="http://placehold.it/225x225" alt="Nom de la formatrice"> -->
+      <!--<h2><span class="cursive">with</span>Jeunesse en programmation</h2>-->
+      <ul>
+        <li><a href="http://twitter.com/learningcode">@learningcode</a></li>
+        <li><a href="https://twitter.com/search?q=%23kidslearningcode&src=typd">#kidslearningcode</a></li>
+      </ul>
+<!--
+      <div class="sponsor">
+        <p>En partenariat avec<br> <img src="framework/img/telus-logo-white.svg" alt="Telus"></p>
+      </div>-->
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licence Creative Commons" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Diapositives créées par Christina Truong</a> pour <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Canada en programmation</a></p>
+        <p class="right">Utilisez les flèches gauche <span class="arrow">&#8592;</span> et droite <span class="arrow">&#8594;</span> pour naviguer.</p>
+      </footer>
+    </section>
+
+  <!--Diapositive 3-->
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Présentation
+      </script>
+    </section>
+
+  <!--Diapositive 4-->
+    <section class= "slide" data-markdown>
+      <script type="text/template">
+        #Ordre du jour
+        <ul>
+          <li>Intro au matériel informatique</li>
+          <li>Activité hors ligne</li>
+          <li>Découverte de micro:bit</li>
+          <li>Programmation avec des blocs dans MakeCode</li>
+          <li style="color:#00a076;">Pause</li>
+          <li>Découverte du JavaScript</li>
+          <li>Montre intelligente en JavaScript!</li>
+      </script>
+    </section>
+
+  <!--Diapositive 5-->
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+       ![Bannière : le code des programmeurs](framework/img/workshop/scroll2.png)<br>
+       *LE CODE DES PROGRAMMEUSES ET DES PROGRAMMEURS*
+         ## 1. DEMANDE DE L’AIDE  <!-- .element: class="delayed" -->
+         ## 2. PRÊTE ATTENTION  <!-- .element: class="delayed" -->
+         ## 3. FAIS DE TON MIEUX!  <!-- .element: class="delayed" -->
+      </script>
+    </section>
+
+  <!--Diapositive 6-->
+    <section class="slide title" data-toc data-markdown>
+     <script type="text/template">
+       # Qu'est-ce que le code?
+     </script>
+    </section>
+
+  <!--Diapositive 7-->
+    <section class="slide" data-markdown>
+     <script type= "text/template">
+       #Le code, c'est...
+       ## UN ENSEMBLE DE DIRECTIVES DISANT À L’ORDINATEUR QUOI FAIRE.
+
+       <br>
+       ![Gif de robot qui court gif](framework/img/workshop/runningrobot.gif)
+       ![Gif de robot qui danse](framework/img/workshop/dancingrobot.gif)
+       ![Gif de robot qui mange](framework/img/workshop/eatingrobot.gif)
+       ![Gif de robot qui danse](framework/img/workshop/dancingrobot2.gif)
+       ![Gif de robot qui danse](framework/img/workshop/bluerobot.gif)
+       ![Gif de robot qui danse](framework/img/workshop/partyrobot.gif)
+
+       <p> Dans le langage du code, nous appelons un ensemble d’instructions un <strong style="color:#00a076;">algorithme</strong>.</p><!-- .element: class="delayed"-->
+
+     </script>
+    </section>
+
+  <!--Diapositive 8-->
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        # Le projet du jour
+        <br>
+        ## Nous apprendrons comment créer des applications portables avec micro:bit.
+      </script>
+    </section>
+
+  <!--Diapositive 9-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Le projet du jour
+        <ul>
+          <li> Le thème de ce mois-ci est l’<strong style="color:#00a076;" >ACTION</strong>! Pose une action concrète pour améliorer la santé et le bien-être de tout le monde en créant un prototype avec micro:bit.</li>
+          <li> Passe de la programmation par blocs au code! </li>
+        </ul>
+      </script>
+    </section>
+
+  <!--Diapositive 10-->
+    <section class="slide two-col-list" data-toc data-markdown>
+      <script type="text/template">
+        #Connais-tu ce jeu?
+        <img style="width:48%" src="framework/img/workshop/flappy.gif" alt="micro:bit, flappy bird" />
+        <img style="width:47%" src="framework/img/workshop/micro-bit.gif" alt="micro:bit, flappy bird" />
+      </script>
+    </section>
+
+  <!--Diapositive 11-->
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        #Pense, discute, partage
+        ## Qu'est-ce que le matériel informatique?
+      </script>
+    </section>
+
+  <!--Diapositive 12-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #LE MATÉRIEL INFORMATIQUE, C'EST...
+        <ul>
+          <li> Toutes les composantes physiques d’un ordinateur </li>
+          <li> Objets physiques « durs » </li>
+          <li> Pièces que tu peux tenir dans ta main </li>
+        </ul>
+        <img src="framework/img/workshop/hardware.jpg" alt="RAM" border="0px" width="45%"/>
+      </script>
+    </section>
+
+  <!--Diapositive 13-->
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Peux-tu donner exemples de matériel informatique?
+      </script>
+    </section>
+
+  <!--Diapositive 14-->
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Pense, discute, partage
+        ## Qu'est-ce qu’un logiciel informatique?
+      </script>
+    </section>
+
+  <!--Diapositive 15-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # UN LOGICIEL INFORMATIQUE, C'EST...
+        <ul>
+          <li> Les consignes écrites qu’un ordinateur utilise pour réaliser une tâche. </li>
+          <li> Les consignes peuvent être des blocs Scratch, du JavaScript, du Python, etc. </li>
+        </ul>
+        <img src="framework/img/workshop/software.jpg" alt="Code JavaScript" border="0px" width="50%" />
+      </script>
+    </section>
+
+  <!--Diapositive 16-->
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Qu'est-ce qui se passe quand nous combinons du matériel et un logiciel informatique?
+      </script>
+    </section>
+
+  <!--Diapositive 17-->
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #Matériel + logiciel = technologie
+        <ul>
+          <li> Téléphones </li>
+          <li> Ordinateurs </li>
+          <li> Montres intelligentes </li>
+        </ul>
+        ![Matériel + logiciel = techno](framework/img/workshop/videogames.png)
+       </script>
+    </section>
+
+  <!--Diapositive 18-->
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Pour faire un lancer franc, de quel matériel avons-nous besoin?
+      </script>
+    </section>
+
+  <!--Diapositive 19-->
+    <section class="slide centered" data-toc data-markdown>
+      <script type="text/template">
+        #D’UN HUMAIN!
+        <img style="width:75%; border-radius:10px;" src="framework/img/workshop/Diana_Taurasi.gif" alt="Lancer franc par Diana Taurasi"/>
+        ###<strong style="font-size:40px;">Diana Taurasi - Moyenne de réussite avec les lancers francs : 86,8 % </strong>
+        ---
+        <div class="dropdown">
+          <button class="dropbtn">Attributions</button>
+          <div class="dropdown-content">
+            <a href="https://media2.giphy.com/media/JmuEpFXcEVw8o/giphy.gif"> James Harden, gif</a>
+        </div>
+       </script>
+    </section>
+
+  <!--Diapositive 20-->
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Pour faire un lancer franc, de quel logiciel avons-nous besoin?
+      </script>
+    </section>
+
+  <!--Diapositive 21-->
+  <section class="slide centered" data-toc data-markdown>
+    <script type="text/template">
+      #DES CONSIGNES SUR LA BONNE POSTURE
+
+      <iframe width="760" height="515" src="https://www.youtube.com/embed/iW2VFzBiaQo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </script>
+  </section>
+
+  <!--Diapositive 22-->
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #BasketBots
+        <ol>
+          <Li> Mets-toi en équipe de deux.</li>
+          <li> Dans ton équipe, une personne sera le matériel et l'autre, le logiciel.</li>
+          <li> Le logiciel donnera des consignes claires au matériel pour qu’il puisse faire un lancer franc. (Tu n'as pas le droit de faire de mouvements en donnant des consignes!)</li>
+          <li> Le matériel fait <strong style="color:#00a076;">exactement </strong>ce que logiciel lui dit de faire.</li>
+          <li> Si une consigne ne fonctionne pas, tu dois la modifier et réessayer! C'est ce qu’on appelle le débogage. </li>
+        </ol>
+       </script>
+    </section>
+
+  <!--Diapositive 23-->
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #INVERSONS LES RÔLES
+      </script>
+    </section>
+
+  <!--Diapositive 24-->
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Bravo! Tu as créé un algorithme!
+      </script>
+    </section>
+
+  <!--Diapositive 25-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Qu'est-ce que micro:bit?
+        <img style="width:48%; float:left;" src="framework/img/workshop/microbit-front.png" alt="microbit, avant"/>
+        <img style="width:48%; float:right;" src="framework/img/workshop/microbit-back.png" alt="microbit, arrière"/>
+        ---
+        <div style="margin-top:130px;" class="dropdown">
+          <button class="dropbtn"> Attributions </button>
+          <div class="dropdown-content">
+            <a href="https://microbit.org/images/microbit-front.png"> Image de la carte microbit, avant </a>
+            <a href="https://microbit.org/images/microbit-back.png"> Image de la microbit, arrière </a>
+        </div>
+      </script>
+    </section>
+
+  <!--Diapositive 26-->
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #MICRO:BIT, C'EST...
+        Le micro:bit est une carte programmable conçue pour encourager les jeunes à programmer. La carte micro:bit utilise le programme MakeCode, qui ressemble beaucoup à Scratch. MakeCode est un bon outil, car il nous permet de programmer avec des blocs, comme dans Scratch, et avec du code <strong style="color:#00a076;">JavaScript</strong>.<br>
+        <img style="padding:20px;" width="49%"src="framework/img/workshop/micro-JS.png"/>
+        <img style="padding:20px;" width="49%"src="framework/img/workshop/micro-block.png"/>
+       </script>
+    </section>
+
+  <!--Diapositive 27-->
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        #À la découverte de micro:bit
+      </script>
+    </section>
+
+  <!--Diapositive 28-->
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        #Qu'est-ce qu’une DEL?
+      </script>
+    </section>
+
+  <!--Diapositive 29-->
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #UNE DEL PROGRAMMABLE, C'EST...
+        <ul>
+        <li style="font-size:0.75em;"> « DEL » est l'abréviation de « diode électroluminescente ». </li>
+        <li style="font-size:0.75em;"> Une DEL est un objet qui convertit l’électricité en lumière, comme une ampoule! </li>
+        <li style="font-size:0.75em"> Les DELs produisent de la lumière de forte intensité pendant très longtemps.</li>
+        <li style="font-size:0.75em;"> Contrairement aux ampoules traditionnelles, les DELs produisent très peu de chaleur. </li>
+        <li style="font-size:0.75em;"> La carte micro:bit a 25 DELs! </li>
+      </ul>
+        <img style="width:20%;" src="framework/img/workshop/beating-heart.gif" alt="DELs du micro:bit" />
+
+        ---
+        <div class="dropdown">
+          <button class="dropbtn">Attributions</button>
+          <div class="dropdown-content">
+            <a href="https://microbit.org/images/beating-heart.gif"> Coeur qui bat, gif</a>
+        </div>
+      </script>
+    </section>
+
+  <!--Diapositive 30-->
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #Boutons programmables
+        <ul>
+          <li>Il y a 2 boutons programmables à l'avant de la carte micro:bit (A et B).</li>
+          <li>Grâce à la programmation, tu peux détecter quand les boutons sont pressés pour activer du code sur la carte.</li>
+        </ul>
+        <img style="width:40%;" src="framework/img/workshop/klc-buttons.png" alt="boutons micro:bit" />
+
+        ---
+        <div class="dropdown">
+          <button class="dropbtn">Attributions</button>
+          <div class="dropdown-content">
+            <a href="https://microbit.org/images/microbit-features-buttons.png"> boutons micro:bit</a>
+        </div>
+      </script>
+    </section>
+
+  <!--Diapositive 31-->
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        #Pense, discute, partage
+        ##Qu'est-ce qu’un capteur?
+      </script>
+    </section>
+
+  <!--Diapositive 32-->
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #UN CAPTEUR, C'EST...
+        <ul>
+          <Li> Comme sur les humains, nous pouvons ajouter du matériel (des capteurs) sur les machines pour les aider à comprendre le monde qui les entoure.</li>
+          <li style="color:#00a076; font-weight:bold;"> Connais-tu les cinq sens des humains? </li>
+          <li class="delayed"> L’ouïe, le goût, le toucher, l’odorat et la vue.</li>
+          <li class="delayed"> Le micro:bit a des capteurs qui détectent la luminosité, la température, le mouvement et l’orientation. </li>
+        </ul>
+
+        <div>
+          <img class="delayed" style="width:20%; vertical-align:middle;" src="framework/img/workshop/light-sensor.png"/>
+          <img class="delayed" style="width:30%; vertical-align:middle" src="framework/img/workshop/temp-sensor.png"/>
+          <img class="delayed" style="width:20%; vertical-align:middle" src="framework/img/workshop/motion-sensor.png"/>
+          <img class="delayed" style="width:20%; vertical-align:middle" src="framework/img/workshop/compass.png"/>
+        </div>
+
+        ---
+        <div class="dropdown">
+          <button class="dropbtn">Attributions</button>
+          <div class="dropdown-content">
+            <a href="https://microbit.org/images/microbit-features-light.png"> Capteur de luminosité micro:bit</a>
+            <a href="https://microbit.org/images/microbit-features-temp.png"> Capteur (sonde) de température micro:bit</a>
+            <a href="https://microbit.org/images/microbit-features-accelerometer.png"> Accéléromètre micro:bit </a>
+            <a href="https://microbit.org/images/microbit-features-compass.png"> Compas micro:bit </a>
+        </div>
+      </script>
+    </section>
+
+  <!--Diapositive 33-->
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #Connecteurs externes
+        <ul>
+          <li style="font-weight:bold;"> Qu'est-ce que tu vois sur le bord du micro:bit? </li>
+          <li class="delayed">Il y a 25 connecteurs externes sur le bord du micro:bit. On les appelle des « broches ».</li>
+          <li class="delayed">Tu peux utiliser les broches pour connecter et programmer des moteurs, des capteurs, des DELs ou d'autres composantes électroniques.</li>
+        </ul>
+        <img style="width:40%;" src="framework/img/workshop/pins.png" alt="Connecteurs externes micro:bit" />
+        ---
+        <div class="dropdown">
+          <button class="dropbtn">Attributions</button>
+          <div class="dropdown-content">
+            <a href="https://microbit.org/images/microbit-features-pins.png"> Broches micro:bit</a>
+        </div>
+      </script>
+    </section>
+
+  <!--Diapositive 34-->
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #Communication sans fil
+        <ul class="delayed">
+          <li> Bluetooth </li>
+          <li style="font-size:0.75em;">Grâce à la technologie BLE (Bluetooth Low Energy), la carte micro:bit peut contrôler des téléphones et des ordinateurs.</li>
+          <li style="font-size:0.75em;"> Tu peux aussi utiliser ton téléphone ou ton ordinateur pour contrôler la carte micro:bit. </li>
+        </ul>
+        <ul class="delayed">
+          <li> Radio </li>
+          <li style="font-size:0.75em;">La radio sert à envoyer des messages à d'autres cartes micro:bit.</li>
+          <li style="font-size:0.75em;"> La radio sert aussi à créer des jeux multijoueurs. </li>
+        </ul>
+        <div>
+          <img style="width:20%; vertical-align:middle;" src="framework/img/workshop/bluetooth.png" alt="Bluetooth avec micro:bit"/>
+          <img style="width:20%; vertical-align:middle;" src="framework/img/workshop/radio.png" alt="Radio micro:bit" />
+        </div>
+
+        ---
+        <div class="dropdown">
+          <button class="dropbtn">Attributions</button>
+          <div class="dropdown-content">
+            <a href="https://microbit.org/images/microbit-features-bluetooth.png"> Bluetooth avec micro:bit</a>
+            <a href="https://microbit.org/images/microbit-features-radio.png"> Radio de micro:bit </a>
+        </div>
+      </script>
+    </section>
+
+    <!--Diapositive 35-->
+      <section class="slide title" data-toc data-markdown>
+        <script type="text/template">
+          #Programmation en groupe avec des blocs
+          ##Faisons des animations avec micro:bit!
+        </script>
+      </section>
+
+    <!--Diapositive 36-->
+      <main>
+        <section class="slide welcome highlight">
+          <h1><img class="logo-stacked" src="framework/img/klc-logo-stacked-white.png" alt="Logo de Femmes en programmation">https://makecode.microbit.org/#</h1>
+
+          <div style="text-align:center;">
+            <img style="width:90%;" src="framework/img/workshop/MakeCode_fr.png" alt="Créer un nouveau projet MakeCode" />
+          </div>
+        </section>
+
+    <!--Diapositive 37-->
+      <section class="slide title" data-toc data-markdown>
+        <script type="text/template">
+          #Pause
+        </script>
+      </section>
+
+    <!--Diapositive 38-->
+      <section class="slide title" data-toc data-markdown>
+        <script type="text/template">
+          #Qu'est-ce que le JavaScript?
+        </script>
+      </section>
+
+    <!--Diapositive 39-->
+      <section class="slide" data-toc data-markdown>
+        <script type="text/template">
+          #Le JavaScript, c'est...
+          <ul>
+            <li> Un langage de programmation informatique de haut niveau.</li>
+            <li> Le JavaScript, aussi appelé « JS », sert surtout à créer des pages Web interactives. Par exemple, le JS nous permet de voir quelque chose lorsque nous appuyons sur un bouton.</li>
+          </ul>
+          <img style="width:30%; border-radius:10px;" src="framework/img/workshop/js.png" alt="Logo JavaScript"/>
+        </script>
+      </section>
+
+    <!--Diapositive 40-->
+      <section class="slide centered" data-toc data-markdown>
+        <script type="text/template">
+          #Pense, discute, partage
+          ##Pourquoi le JavaScript est-il utile aux créatrices et aux créateurs de mode?
+
+          <img style="width:70%;" src="framework/img/workshop/maddy.png" alt="Maddy, créatrice d emode" />
+
+        </script>
+      </section>
+
+    <!--Diapositive 41-->
+      <section class="slide centered" data-toc data-markdown>
+        <script type="text/template">
+          #Voici Maddy, créatrice de mode et programmeuse!
+          <iframe width="760" height="515" src="https://www.youtube.com/embed/0wxGVztsmjg?controls=0?cc_load_policy=1&hl=fr_FR&cc_lang_pref=fr&cc=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </script>
+      </section>
+
+    <!--Diapositive 42-->
+      <section class="slide" data-toc data-markdown>
+        <script type="text/template">
+          #Domaines où il est utile de savoir programmer
+          <ul>
+            <li> <strong  style=color:#00a076;>Conception Web </strong>- Le code nous permet de créer des sites Web. </li>
+            <li> <strong style=color:#00a076;> Génie logiciel </strong> - Le code nous permet de créer des programmes pour les ordinateurs. </li>
+            <li> <strong style=color:#00a076;>Robotique </strong> - Le code nous permet de rendre les machines autonomes. </li>
+            <li> <strong style=color:#00a076;>Réalisation de films</strong> - Le code nous permet d’animer des scènes et de créer des effets spéciaux. </li>
+            <li> <strong style=color:#00a076;>Musique </strong> - Le code nous permet de créer de la bonne musique sans utiliser de vrais instruments. </li>
+            <li> <strong style=color:#00a076;>Médecine </strong> - Le code nous permet d'analyser des rayons X et de programmer des machines qui nous aident à faire des chirurgies.</li>
+            <li> <strong style=color:#00a076;>Création de mode </strong> - Le code nous permet de créer des vêtements qui s'adaptent à notre corps. </li>
+          </ul>
+        </script>
+      </section>
+
+    <!--Diapositive 43-->
+      <main>
+        <section class="slide welcome highlight">
+          <h1><img class="logo-stacked" src="framework/img/klc-logo-stacked-white.png" alt="Logo de Femmes en programmation">Programmons en JavaScript!</h1>
+          <div style="text-align:center;">
+            <img style="width:90%;" src="framework/img/workshop/MakeCode-Java-Tab_fr.png" alt="Modifier le projet et transformer le code en JavaScript" />
+          </div>
+        </section>
+
+  <!--Diapositive 44-->
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        #C’est le temps d’agir!
+      </script>
+    </section>
+
+  <!--Diapositive 45-->
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        <div style='text-align:center; vertical-align:center;'>
+          <video controls>
+            <source src="framework/img/workshop/global-challenge-winners.mp4" </source>
+          Ce navigateur ne prend pas en charge l’intégration vidéo.
+          </video>
+        </div>
+      </script>
+    </section>
+
+  <!--Diapositive 46-->
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        #Pense, discute, partage
+        ##QUELS PROBLÈMES DE LA VRAIE VIE PEUT-ON RÉSOUDRE AVEC MICRO:BIT?
+      </script>
+    </section>
+
+  <!--Diapositive 47-->
+    <section class="slide centered" data-toc data-markdown>
+      <script type="text/template">
+        #Combien de pas fais-tu par jour en marchant?
+        <h2 class="delayed">Les habitants du Canada se classent 19es sur 30 pays industrialisés en ce qui concerne l'activité physique. </h2>
+        <div class="delayed">
+          <img style="width:63%; border-radius:10px;"src="framework/img/workshop/dogs.gif" alt="Corgi sur un tapis roulant" />
+          <br>
+          <h2>Pour mener une vie active, nous n'avons qu’à faire quelques<strong style="color:#00a076"> pas </strong>! </h2>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn"> Attributions</button>
+          <div class="dropdown-content">
+            <a href="https://media0.giphy.com/media/JcztVmDjYXt9m/giphy.gif"> Corgis sur un tapis roulant, gif </a>
+        </div>
+      </script>
+    </section>
+
+  <!--Diapositive 48-->
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        #Créons un compteur de pas avec micro:bit!
+      </script>
+    </section>
+
+  <!--Diapositive 49-->
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        #Avant de commencer, parlons d'accélération.
+      </script>
+    </section>
+
+  <!--Diapositive 50-->
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        #Qu'est-ce que l'accélération?
+      </script>
+    </section>
+
+  <!--Diapositive 51-->
+    <section class="slide centered" data-toc data-markdown>
+      <script type="text/template">
+        #L'accélération, c'est...
+        <img style="width:60%;" src="framework/img/workshop/acceleration-is_fr.png" alt="Graphique montrant l'accélération" />
+        <h2 class="delayed">L’ <strong style="color:#00a076;">accéléromètre</strong> du micro:bit détecte l'accélération de la carte. </h2>
+        ---
+        <div class="dropdown">
+          <button class="dropbtn">Attributions</button>
+          <div class="dropdown-content">
+            <a href="https://cdn.kastatic.org/ka-perseus-images/ee08cfdce4bdba3844612f517e4daf28803f3c46.png"> Image représentant l'accélération</a>
+        </div>
+      </script>
+    </section>
+
+  <!--Diapositive 52-->
+    <main>
+      <section class="slide welcome highlight">
+        <h1><img class="logo-stacked" src="framework/img/klc-logo-stacked-white.png" alt="Logo de Femmes en programmation">https://makecode.microbit.org/#</h1>
+
+        <div style="text-align:center;">
+          <img style="width:90%;" src="framework/img/workshop/MakeCode_fr.png" alt="Créer un nouveau projet MakeCode" />
+        </div>
+      </section>
+
+  <!--Diapositive 53-->
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        #Créons une montre intelligente avec micro:bit!
+        ##Programmation en groupe : JavaScript
+      </script>
+    </section>
+
+  <!--Diapositive 54-->
+    <section class="slide title" data-toc data-markdown>
+      <script type="text/template">
+        #Pause
+      </script>
+    </section>
+
+  <!--Diapositive 55-->
+    <section class="slide" data-toc data-markdown>
+      <script type="text/template">
+        #Séance de travail
+        <ul>
+          <li> Tu peux créer un bracelet pour ta montre micro:bit avec du papier de construction, des marqueurs, du ruban adhésif, des rubans décoratifs ou des cure-pipes.</li>
+          <li> Avant d'aller à l'extérieur, il est important de vérifier s’il fait chaud ou froid. <br><strong>Solution</strong> : un écran qui affiche la température!
+          <li> Quand nous marchons sur un sentier, nous pouvons facilement nous perdre. <br><strong>Solution</strong> : un compas qui s'affiche quand nous appuyons sur le bouton B! </li>
+        </ul>
+      </script>
+    </section>
+
+  <!--Diapositive 56-->
+      <section class="slide title" data-markdown>
+        <script type="text/template">
+          #DÉMONSTRATIONS
+        </script>
+      </section>
+
+  <!--Diapositive 57-->
+      <section class="slide" data-toc data-markdown>
+        <script type="text/template">
+          # Aujourd'hui, j'ai appris que...
+          <div style="font-size: 0.75em;">
+            <p><strong>Je peux</strong> expliquer la différence entre le matériel et le logiciel.</p><!-- .element: class="delayed" -->
+            <p><strong>Je peux </strong> utiliser des expressions conditionnelles pour contrôler les actions dans mon projet.</p><!-- .element: class="delayed" -->
+            <p><strong>Je peux</strong> utiliser des boucles pour répéter des actions.</p><!-- .element: class="delayed" -->
+            <p><strong>Je peux</strong> utiliser le code pour activer des actions quand un bouton est pressé.</p><!-- .element: class="delayed" -->
+            <p><strong>Je peux </strong> utiliser le code pour allumer une DEL.</p><!-- .element: class="delayed" -->
+            <p><strong>Je peux </strong> écrire du code et utiliser les informations des capteurs.</p><!-- .element: class="delayed" -->
+            <p><strong>Je peux </strong> traduire des blocs en code JavaScript.</p><!-- .element: class="delayed" -->
+            <p><strong>Je peux </strong> essayer et déboguer mon code.</p><!-- .element: class="delayed" -->
+          </div>
+        </script>
+      </section>
+
+    <!-- Dernière diapositive -->
+    <section class="slide last">
+      <h1>Merci!</h1>
+      <h2 class="heading-bg">
+        <span>Intro au matériel informatique<br>
+          avec micro:bit</span>
+      </h2>
+
+      <!-- <img class="instructor" src="http://placehold.it/225x225" alt="Nom de la formatrice"> -->
+      <!--<h2><span class="cursive">pour</span>Jeunesse en programmation</h2>-->
+      <ul>
+        <li><a href="http://twitter.com/learningcode">@learningcode</a></li>
+        <li><a href="https://twitter.com/search?q=%23kidslearningcode&src=typd">#kidslearningcode</a></li>
+      </ul>
+
+      <p class="attribution">Diapositives créées par Christina Truong pour Canada en programmation.</p>
+    </section>
+
+  </main><!-- Section principale cls -->
+
+  <script src="framework/scripts/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Enlevez les commentaires des modules dont vous avez besoin -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/llc.js"></script>
+  <script>
+    var slideshow = new SlideShow();
+
+    // Regroupe tous les éléments .snippet
+    var snippets = document.querySelectorAll('.snippet');
+    for(var i=0; i<snippets.length; i++) {
+      new CSSSnippet(snippets[i]);
+    }
+  </script>
+</body>
+</html>
